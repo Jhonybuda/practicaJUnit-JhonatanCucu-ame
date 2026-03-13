@@ -84,12 +84,14 @@ public class CirculoTest {
     @Test
     public void testCalcularArea() {
         System.out.println("calcularArea");
-        Circulo instance = new Circulo();
-        double expResult = 0.0;
-        double result = instance.calcularArea();
-        assertEquals(expResult, result, 0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Circulo instanciaD = new Circulo(1);
+        
+        double areaEsperada = (Math.PI * Math.pow(instanciaD.getRadio(), 2));
+        double areaCalculada = instanciaD.calcularArea();
+        assertEquals(areaEsperada, areaCalculada, 0.0);
+        
+        System.out.println(areaEsperada);
+        System.out.println(areaCalculada);
     }
 
     /**
