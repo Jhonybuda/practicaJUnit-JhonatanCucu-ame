@@ -62,6 +62,22 @@ public class CirculoTest {
         
     }
     
+     /**
+     * Test of setRadio method, of class Circulo.
+     */
+    @Test
+    public void testSetRadio() {
+        System.out.println("setRadio");
+        Circulo instanciaC = new Circulo(15);
+        double radio = 24.0;
+        System.out.println(instanciaC.getRadio());
+        instanciaC.setRadio(radio);
+        System.out.println(instanciaC.getRadio());
+    }
+
+    
+    
+    
     /**
      * Test of calcularArea method, of class Circulo.
      */
@@ -92,19 +108,7 @@ public class CirculoTest {
 
     
 
-    /**
-     * Test of setRadio method, of class Circulo.
-     */
-    @Test
-    public void testSetRadio() {
-        System.out.println("setRadio");
-        double radio = 0.0;
-        Circulo instance = new Circulo();
-        instance.setRadio(radio);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
+   
     /**
      * Test of mostrarNombre method, of class Circulo.
      */
