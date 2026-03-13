@@ -109,7 +109,19 @@ public class CirculoTest {
     }
 
     
-
+    /**
+     * Test of mostrarRadio method, of class Circulo.
+     */
+    @Test
+    public void testMostrarRadio() {
+        System.out.println("mostrarRadio");
+        Circulo circulito = new Circulo(4);
+        double resultadoEsperado = 4;
+        double resultadoReal = Circulo.mostrarRadio(circulito);
+        assertEquals(resultadoEsperado, resultadoReal, 0);
+        System.out.println(resultadoEsperado);
+        System.out.println(resultadoReal);
+    }
    
     /**
      * Test of mostrarNombre method, of class Circulo.
@@ -119,22 +131,9 @@ public class CirculoTest {
         System.out.println("mostrarNombre");
         Circulo instance = new Circulo();
         instance.mostrarNombre();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
-    /**
-     * Test of mostrarRadio method, of class Circulo.
-     */
-    @Test
-    public void testMostrarRadio() {
-        System.out.println("mostrarRadio");
-        Circulo circulito = null;
-        double expResult = 0.0;
-        double result = Circulo.mostrarRadio(circulito);
-        assertEquals(expResult, result, 0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+    
     
 }
