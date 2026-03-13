@@ -100,12 +100,12 @@ public class CirculoTest {
     @Test
     public void testCalcularPerimetro() {
         System.out.println("calcularPerimetro");
-        Circulo instance = new Circulo();
-        double expResult = 0.0;
-        double result = instance.calcularPerimetro();
-        assertEquals(expResult, result, 0);
-        // TODO review the generated test code and remove the default call to fail.
-       fail("The test case is a prototype.");
+        Circulo instanciaE = new Circulo(2);
+        double resultadoEsperado = 12.57;
+        double resultadoReal = instanciaE.calcularPerimetro();
+        assertEquals(resultadoEsperado, resultadoReal, 0.01);
+        System.out.println(resultadoEsperado);
+        System.out.println(resultadoReal);
     }
 
     
